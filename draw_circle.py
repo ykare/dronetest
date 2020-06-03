@@ -31,11 +31,16 @@ import argparse
 parser = argparse.ArgumentParser(description='Demonstrates basic mission operations.')
 parser.add_argument('--connect', 
                    help="vehicle connection target string. If not specified, SITL automatically started and used.")
+parser.add_argument('--horizontal',
+                   help="draw horizontal circle")
+
 args = parser.parse_args()
 
 connection_string = args.connect
 sitl = None
 
+if args.horizontal:
+    IS_VIRTICAL = False
 
 #Start SITL if no connection string specified
 if not connection_string:
