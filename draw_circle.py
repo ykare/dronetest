@@ -5,6 +5,17 @@
 © Copyright 2020, Yoshiyuki Karezaki <y.karezaki@gmail.com>
 draw_circle.py: 
 
+ドローンエンジニア養成塾第 9 期コース 2 終了課題。
+縦方向もしくは水平方向に円を描くスクリプト。
+
+--connect 接続文字列
+--horizontal true 水平方向に円を描く
+
+実行方法:
+$ ./draw_circle.py --connect 127.0.0.1:14551
+
+参考: DroneKit Python mission_basic.py
+
 © Copyright 2015-2016, 3D Robotics.
 mission_basic.py: Example demonstrating basic mission operations including creating, clearing and monitoring missions.
 
